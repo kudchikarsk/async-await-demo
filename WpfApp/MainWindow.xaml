@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="735.5">
 	<Grid>
-		<TextBox HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="614"/>
-		<Button Content="Button" HorizontalAlignment="Left" Margin="629,0,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
+		<TextBox 
+			Name="textBox"
+			HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" 
+			TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="614"/>
+		<Button Content="Button" HorizontalAlignment="Left" Margin="629,0,0,0" VerticalAlignment="Top" Width="80" Height="23" Click="Button_Click"/>
 		<ScrollViewer Margin="0,28,0,0">
 			<TextBlock 
+				Name="textBlock"
 				ScrollViewer.CanContentScroll="True"
 				ScrollViewer.VerticalScrollBarVisibility="Auto"
 				ScrollViewer.HorizontalScrollBarVisibility="Disabled"
