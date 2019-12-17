@@ -20,12 +20,12 @@ namespace WebApplication.Controllers
             }
 
             var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync(url);
+            var response = await httpClient.GetAsync(url).ConfigureAwait(false);
             try
             {
 
                 response.EnsureSuccessStatusCode();
-                var data = await response.Content.ReadAsStringAsync();
+                var data = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return Ok(data);
             }
             catch (Exception ex)
